@@ -22,8 +22,9 @@ Initialize conda: conda init
 4. Create a Python Script to Download and Run the Model
    vi run_llm.py
 
-   import torch
+import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
+
 
 def main():
     # Choose the model (GPT-2 in this example)
@@ -59,6 +60,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 5. Run the Python Script
    python3 run_llm.py
