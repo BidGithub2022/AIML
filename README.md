@@ -22,7 +22,6 @@ Initialize conda: conda init
 4. Create a Python Script to Download and Run the Model
    vi run_llm.py
 
-
 import torch
 
 from transformers import AutoTokenizer, AutoModelForCausalLM
@@ -58,7 +57,7 @@ def main():
         # Decode and print the generated text
         generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
         print("Model:", generated_text, "\n")
-
+        
 if __name__ == "__main__":
     main()
 
